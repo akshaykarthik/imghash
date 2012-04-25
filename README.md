@@ -1,4 +1,5 @@
 # Image Hash
+
 This is just a quick concept that I messed around with.
 Basically, this is a visualization of sha384 hash.
 
@@ -9,10 +10,11 @@ The alorithm is extremely simple.
     avoid different hashes for different capitalizations of the same string.
 2. Split the hash string into a set of tuples each of length 3 `(line 14)`
     This is not as complicated as it seems.
-    Here is an example.
-    `   
-    String = "abcdefghi"
-    Map = [
+    Here is an example.  
+    `  
+    String = "abcdefghi"  
+
+    Map = [  
         ( a, b, c )
         ( d, e, f )
         ( g, h, i )
@@ -24,5 +26,7 @@ The alorithm is extremely simple.
     made by the values of the bytes in the tuples.
 
 To run this simply run
+
     ` python imghash.py <text to hash>`
+
 This will output a file that is `<text to has>.png`
