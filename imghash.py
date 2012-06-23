@@ -4,6 +4,7 @@ import Image
 import ImageDraw
 
 if __name__ == '__main__':
+    print "starting"
     if(len(sys.argv) > 1):
         name = sys.argv[1]
     else:
